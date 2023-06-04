@@ -16,16 +16,16 @@ def input_type_of_conversion():
 
 
 def convert_rgb_to_hex(r, g, b):
-    hexa = ""
-    for n in [r, g, b]:
-        if n < 0:
-            n = 0
-        elif n > 255:
-            n = 255
+	hexa = ""
+	for n in [r, g, b]:
+		if n < 0:
+			n = 0
+		elif n > 255:
+			n = 255
             
-        hexa += format(n, '02X')
+		hexa += format(n, '02X')
          
-    return hexa
+	return hexa
   
   
 def convert_hex_to_rgb(hexadecimal):
